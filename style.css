@@ -4,8 +4,8 @@
 
 
 body {
-    background-color: #798665;
-    color: #2e3326;
+    background-color: var(--bg-color);
+    color: var(--text-main-color);
 
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@ body {
 
 #navBar{
     width: 70%;
-    border: 1px solid black;
+    border: 1px solid var(--navBar-border-color);
     border-radius: 10px;
     display: flex;
     align-items:flex-end;
@@ -61,12 +61,12 @@ body {
     width: 40px;
     height: 40px;
 
-    color:#3a4131;
-    background-color: #9fb382;
+    color: var(--color-svg-navBar);
+    background-color: var(--bg-color-svg-NavBar);
 
     border-radius: 8px;
     border-width: 2px;
-    border-color: #3a41319f;
+    border-color: var(--border-color-svg-navBar);
     border-style:solid;    
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.116);
 }
@@ -95,24 +95,24 @@ body {
 }
 
 #quoteContainer #quoteText{
-    color: white;
+    color: var(--color-main-text);
     font-size: 1.7rem;
 
     margin: 10px;
 }
 #quoteContainer #author{
    
-    color: #becea6;
+    color: var(--color-author);
     font-size: 1.5rem;
     align-self: end;
     margin: 0px 15px;
 }
 #quoteContainer #category{
     
-    color: white;
+    color: var(--color-text-category);
     border-radius: 30px;
-    border: 1px solid black;
-    background-color: rgb(90, 90, 30);
+    border: 1px solid rgba(0, 0, 0, 0.425);
+    background-color: var(--bg-category-color);
 
     margin: 10px;
     padding: 5px 12px;
@@ -123,12 +123,12 @@ body {
 #generateBtn {
     height: 40px;
 
-    color:#3a4131;
-    background-color: #9fb382;
+    color:var(--color-newQuote);
+    background-color: var(--bg-newQuote);
 
     border-radius: 8px;
     border-width: 2px;
-    border-color: #3a41319f;
+    border-color: var(--border-color-newQuote);
     border-style:solid;    
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.116);
 
@@ -169,4 +169,125 @@ body {
 }
 .font-Times_New_Roman{
     font-family: 'Times New Roman';
+}
+
+
+
+/*Theme Changer*/
+
+/*Temas*/
+.theme-camouflage-green {
+    --bg-color: #798665;
+    --text-main-color: #2e3326;
+    --navBar-border-color: #00000017;
+
+
+    --color-svg-navBar: #3a4131;
+    --bg-color-svg-NavBar: #9fb382;
+    --border-color-svg-navBar: #3a41319f;
+
+    --color-main-text: #ffffff;
+    --color-author: #becea6;
+
+    --bg-category-color: #5a5a1e;
+    --color-text-category: #ffffff;
+    
+    --bg-newQuote: #9fb382;
+    --color-newQuote: #3a4131;
+    --border-color-newQuote:#3a41319f;
+
+}
+
+
+
+
+.theme-outer-space {
+    --bg-color: #2F383A;
+    --text-main-color: #e6f1d3;
+    --navBar-border-color: #5f5f61;
+
+
+    --color-svg-navBar: #405053;
+    --bg-color-svg-NavBar: #ccc4ce;
+    --border-color-svg-navBar: #405053;
+
+    --color-main-text: #ffffff;
+    --color-author: #ccc4ce;
+
+    --bg-category-color: #ccc4ce;
+    --color-text-category: #405053;
+    
+    --bg-newQuote: #ccc4ce;
+    --color-newQuote: #405053;
+    --border-color-newQuote:#405053;
+
+}
+
+
+
+.theme-platinum {
+    --bg-color: #E6E5DF;
+    --text-main-color: #790309;
+    --navBar-border-color: #dbc9c2dc;
+
+
+    --color-svg-navBar: #852328;
+    --bg-color-svg-NavBar: #dfddd4;
+    --border-color-svg-navBar: #c09a8b;
+
+    --color-main-text: #ac5c38;
+    --color-author: #8D0209;
+
+    --bg-category-color: #394053;
+    --color-text-category: #E6E5DF;
+    
+    --bg-newQuote: #dfddd4;
+    --color-newQuote: #8D0209;
+    --border-color-newQuote:#c09a8b;
+
+}
+
+.theme-coffee {
+    --bg-color: #6C5234;
+    --text-main-color: #ebdf7a;
+    --navBar-border-color: #ac9f7b9d;
+
+
+    --color-svg-navBar: #6C5234;
+    --bg-color-svg-NavBar: #dfcd9c;
+    --border-color-svg-navBar: #ac9f7b9d;
+
+    --color-main-text: #dfcd9c;
+    --color-author: #b3b6eb;
+
+    --bg-category-color: #d3bf8a9d;
+    --color-text-category: #27211a;
+    
+    --bg-newQuote: #dfcd9c;
+    --color-newQuote: #6C5234;
+    --border-color-newQuote:#ac9f7b9d;
+
+}
+
+
+.theme-japanese-indigo {
+    --bg-color: #1A4759;
+    --text-main-color: #fdda5c;
+    --navBar-border-color: #a2d3f01f;
+
+
+    --color-svg-navBar: #1A4759;
+    --bg-color-svg-NavBar: #a2d4f0e7;
+    --border-color-svg-navBar: #1A4759;
+
+    --color-main-text: #FFe998;
+    --color-author: #86BBD8;
+
+    --bg-category-color: #a2d4f0e7;
+    --color-text-category: #1A4759;
+    
+    --bg-newQuote: #a2d4f0e7;
+    --color-newQuote: #1A4759;
+    --border-color-newQuote:#1A4759;
+
 }

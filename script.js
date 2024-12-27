@@ -58,3 +58,31 @@ function changeFontFamily(){
 }
 
 changeFontBtn.addEventListener('click', changeFontFamily);
+
+
+
+
+// Change Theme Function
+
+let changeThemeBtn = document.getElementById('changeThemeBtn')
+let currentTheme = 0;
+let themesArray = ["theme-camouflage-green", "theme-outer-space", "theme-platinum", "theme-coffee", "theme-japanese-indigo"];
+
+let body = document.body;
+
+/*Função alternadora de Temas*/
+function changeTheme(){
+    // Divs alteradas
+    body.classList.remove(themesArray[currentTheme]);
+
+
+
+    currentTheme = (currentTheme + 1) % themesArray.length
+
+
+    body.classList.add(themesArray[currentTheme])
+
+}
+
+changeTheme();
+changeThemeBtn.addEventListener('click', changeTheme)
