@@ -1,5 +1,6 @@
 * {
     margin: 0;
+
 }
 
 
@@ -290,4 +291,9 @@ body {
     --color-newQuote: #1A4759;
     --border-color-newQuote:#1A4759;
 
+}
+
+
+body, #quoteContainer, #navBar, #textContainer {
+    transition: all 0.3s ease-in-out;
 }
