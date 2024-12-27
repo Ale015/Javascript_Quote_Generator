@@ -38,14 +38,23 @@ generateBtn.addEventListener('click', fetchQuote);
 
 // Change Font Family
 
-
-
-
-
-
+let changeFontBtn = document.getElementById('changeFontBtn')
+let currentFontIndex = 0;
+let arrayOfFonts = ["font-Ysabeau_SC","font-Roboto","font-Montserrat","font-Kanit","font-Playfair_Display","font-Times_New_Roman"];
 
 
 function changeFontFamily(){
 
-    let arrayOfFonts = ["Ysabeau SC","Roboto", "Montserrat", "Kanit", "Playfair Display"];
+
+    quoteText.classList.remove(arrayOfFonts[currentFontIndex]);
+    author.classList.remove(arrayOfFonts[currentFontIndex]);
+    category.classList.remove(arrayOfFonts[currentFontIndex]);
+
+    currentFontIndex = (currentFontIndex + 1) % arrayOfFonts.length;
+
+    quoteText.classList.add(arrayOfFonts[currentFontIndex]);
+    author.classList.add(arrayOfFonts[currentFontIndex]);
+    category.classList.add(arrayOfFonts[currentFontIndex]);
 }
+
+changeFontBtn.addEventListener('click', changeFontFamily);

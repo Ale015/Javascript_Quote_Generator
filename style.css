@@ -89,24 +89,26 @@ body {
 #textContainer {
     display: flex;
     flex-direction: column;
+
+    font-family: Ysabeau SC;
+
 }
 
 #quoteContainer #quoteText{
-    font-family: Kanit;
     color: white;
     font-size: 1.7rem;
 
     margin: 10px;
 }
 #quoteContainer #author{
-    font-family: Kanit;
+   
     color: #becea6;
     font-size: 1.5rem;
     align-self: end;
     margin: 0px 15px;
 }
 #quoteContainer #category{
-    font-family: Kanit;
+    
     color: white;
     border-radius: 30px;
     border: 1px solid black;
@@ -147,4 +149,24 @@ body {
 
 #generateBtn svg {
     padding-right: 2px;
+}
+
+
+.font-Ysabeau_SC {
+    font-family: 'Ysabeau SC';
+}
+.font-Roboto {
+    font-family: 'Roboto';
+}
+.font-Montserrat {
+    font-family: 'Montserrat';
+}
+.font-Kanit {
+    font-family: 'Kanit';
+}
+.font-Playfair_Display {
+    font-family: 'Playfair Display';
+}
+.font-Times_New_Roman{
+    font-family: 'Times New Roman';
 }
